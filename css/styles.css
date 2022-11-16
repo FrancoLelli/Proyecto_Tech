@@ -73,6 +73,17 @@ nav ul li{
     padding: 10px 20px;
 }
 
+.btn a{
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 2px
+}
+
+.btn2 a{
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 2px
+}
 
 
 nav ul li a{
@@ -83,6 +94,11 @@ nav ul li a{
 
 nav ul li a:hover{
     transition: 1s;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
 }
 
 .btn{
@@ -98,6 +114,10 @@ nav ul li a:hover{
     letter-spacing: 2px
 }
 
+.btn2{
+    display: none;
+}
+
 .btn:hover{
     cursor: pointer;
     transition: 0.3s;
@@ -110,6 +130,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.imgNone{
+    display: none;
 }
 
  .cosas{
@@ -140,6 +164,7 @@ main{
 
 .img2{
     width: 200px;
+    color: transparent;
 }
 
 
@@ -196,7 +221,7 @@ main{
     color: whitesmoke;
     letter-spacing: 1px;
     font-weight:lighter;
-    padding: 10px;
+    padding: 30px;
 }
 
 /* @keyframes typing {
@@ -258,8 +283,292 @@ footer {
 
 }
 
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+
 .imgs{
     margin: 0px 10px;
     width: 20px;
     height: 20px;
+}
+
+@media screen and (max-width: 1445px){
+    body{
+        font-size: 10px;
+        overflow-y:scroll;
+        background-image: url('../img/image.png');
+        background-size: cover; 
+    }
+
+    .hero{
+        height: 20%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .hamburger{
+        display: block;
+        padding-right: 15px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(22,40,140,1);
+        background: linear-gradient(228deg, rgba(22,40,140,1) 0%, rgba(2,11,64,1) 90%);
+        width: 100%;
+        text-align: center;
+        transition: 0.2s;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    .nav-item{
+        margin: 16px 0;
+        font-size: 15px;
+    }
+    
+    .nav-menu.active{
+        left: 0;
+        display: flex;
+        align-items: center;
+        background: rgba(22,40,140,1);
+        background: linear-gradient(228deg, rgb(10, 23, 97) 60%, rgb(10, 25, 112));
+        z-index: 10;
+    
+    }
+
+    .texto{
+        padding: 12px;
+
+    }
+
+    .texto .p1{
+        font-size: 15px;
+    }
+
+    .texto .p2{
+        font-size: 12px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+
+    .btn{
+        display: none;
+    }
+    
+    .btn2{
+        display: block;
+        border: none;
+        background-color: #a02e38;
+        padding: 15px 30px;
+        border-radius: 5px;
+        color: whitesmoke;
+        font-weight:lighter;
+        font-size: 15px;
+        transition: 1s;
+        font-family: vicent;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+
+    .conteinerImg{
+        display: none;
+    }
+
+    body{
+        max-height: 100%;
+    }
+
+    .imgNone{
+        display: block;
+        width: 150px;
+    }
+
+    .texto .p3{
+        font-size: 15px;
+        color: whitesmoke;
+        letter-spacing: 1px;
+        font-weight:lighter;
+        padding: 20px;
+    }
+
+    .texto .p4{
+        font-size: 25px;
+    }
+
+    .tit2{
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .hamburger{
+        display: block;
+        padding-right: 15px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(22,40,140,1);
+        background: linear-gradient(170deg,  rgb(2 16 92) 86%, rgb(2, 12, 67) 10%);
+
+        width: 100%;
+        text-align: center;
+        transition: 0.2s;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    .nav-item{
+        margin: 16px 0;
+    }
+    
+    .nav-menu.active{
+        left: 0;
+        display: flex;
+        align-items: center;
+        background: rgba(22,40,140,1);
+        background: linear-gradient(170deg,  rgb(2 16 92) 86%, rgb(2, 12, 67) 10%);
+        z-index: 10;
+    
+    }
+
+    .texto{
+        padding: 12px;
+
+    }
+
+    .texto .p1{
+        font-size: 15px;
+    }
+
+    .texto .p2{
+        font-size: 12px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+
+    .btn{
+        display: none;
+    }
+    
+    .btn2{
+        display: block;
+        border: none;
+        background-color: #a02e38;
+        padding: 15px 30px;
+        border-radius: 5px;
+        color: whitesmoke;
+        font-weight:lighter;
+        font-size: 15px;
+        transition: 1s;
+        font-family: vicent;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+
+    .conteinerImg{
+        display: none;
+    }
+
+    body{
+        max-height: 100%;
+    }
+
+    .imgNone{
+        display: block;
+        width: 150px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        color: black;
+        padding: 10px 0;
+
+    }
+
+    .cont p{
+        color: #a8a8a8;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .texto{
+        padding: 12px;
+
+    }
+
+    .texto .p3{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    .texto{
+        padding: 10px;
+
+    }
+
+    .texto .p3{
+        font-size: 10px;
+    }
+
 }
