@@ -3,6 +3,9 @@
     src: url('../fonts/bank-gothic-light-bt.ttf');
 }
 
+.blur-in{animation:blur-in 0.9s linear} @keyframes blur-in{0%{filter:blur(50px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -44,7 +47,7 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: #a02e38;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 1s ease-in-out;
@@ -59,9 +62,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-top: 30px;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-top: 15px;
+    padding-right: 7%;
 }
 
 nav ul li{
@@ -79,7 +82,6 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #F23041;
     transition: 1s;
 }
 
@@ -140,30 +142,61 @@ main{
     width: 200px;
 }
 
+
  .texto{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    border-top: 3px solid #F23041;
-    border-bottom: 3px solid #F23041;
+    /* border-top: 3px solid #F23041;
+    border-bottom: 3px solid #F23041; */
     padding: 40px;
 } 
 
+.e{
+    padding: 100px;
+}
 
-.texto p{
+.texto .p1{
     /* width: 280px; */
     font-size: 30px;
     color: whitesmoke;
     letter-spacing: 2px;
     font-weight:lighter;
+    padding: 10px;
 /*     animation: typing 2.5s steps(27) alternate, blink .5s;
  */
     /* white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid black; */
 
+}
+
+.texto .p4{
+    font-size: 30px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #F23041;
+    font-weight:lighter;
+    padding-bottom: 5px;
+}
+
+.texto .p2{
+    font-size: 30px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    border-top: 3px solid #F23041;
+    font-weight:lighter;
+    padding: 10px;
+}
+
+.texto .p3{
+    font-size: 20px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight:lighter;
+    padding: 10px;
 }
 
 /* @keyframes typing {
@@ -196,6 +229,14 @@ footer {
     align-items: center;
     padding-bottom: 20px;
       
+}
+
+.tit2{
+    color: #F23041;
+}
+
+.cont p{
+    color: #a8a8a8;
 }
 
 .circ{
