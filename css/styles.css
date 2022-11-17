@@ -30,6 +30,10 @@ body{
     width: 100%;
 }
 
+.conteinerImg2{
+    display: none;
+}
+
 .logo{
     position: fixed;
     left: 4;
@@ -70,7 +74,7 @@ nav{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 40px;
 }
 
 .btn a{
@@ -94,6 +98,44 @@ nav ul li a{
 
 nav ul li a:hover{
     transition: 1s;
+}
+
+nav ul li ul{
+    position: absolute;
+    width: 200px;
+    background-color: whitesmoke;
+    display: none;
+}
+
+nav ul li ul i{
+    left: 3;
+}
+
+nav ul li:hover > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul li ul li{
+    display: flex;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+}
+
+.redes img{
+    padding-right: 10px;
+}
+
+
+nav ul li ul li a{
+    text-decoration: none;
+    color: #9f1e28;
+    cursor: pointer;
 }
 
 .hamburger{
@@ -180,6 +222,7 @@ nav ul li a:hover{
 .img2{
     width: 150px;
     display: block;
+    color:rgba(22,40,140,1) ;
 }
 
 
@@ -239,6 +282,7 @@ nav ul li a:hover{
     padding: 30px;
 }
 
+
 /* @keyframes typing {
     from{
         width: 0;
@@ -285,6 +329,7 @@ nav ul li a:hover{
 .tit2{
     color: #F23041;
     width: 96%;
+    text-shadow: black 0.2em 0.2em 0.2em
 }
 
 .cont p{
@@ -326,11 +371,36 @@ nav ul li a:hover{
     height: 20px;
 }
 
+@media screen and (max-width: 1645px){
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 14px;
+    }
+}
+
 @media screen and (max-width: 1445px){
     body{
         font-size: 10px;
         overflow-y:scroll;
         background-size: cover; 
+    }
+
+    .conteinerImg2 {
+        display: block;
+        width: 500px;
+        text-align: center;
+        padding: 23px 0;
+    }
+
+    .conteinerImg{
+        display: none;
     }
 
     .hero{
@@ -383,7 +453,15 @@ nav ul li a:hover{
         align-items: center;
         background: rgba(22,40,140,1);
         z-index: 10;
-    
+    }
+
+
+    .nav ul li ul:hover > ul{
+        display: flex;
+        left: 0;
+        width: 100%;
+        background-color: whitesmoke;
+        z-index: 10;
     }
 
     .texto{
@@ -421,6 +499,13 @@ nav ul li a:hover{
         letter-spacing: 2px;
         margin-top: 10px;
     }
+    
+    .conteinerImg2 {
+        display: block;
+        width: 436px;
+        text-align: center;
+        padding: 23px 0;
+    }
 
     .conteinerImg{
         display: none;
@@ -431,8 +516,7 @@ nav ul li a:hover{
     }
 
     .imgNone{
-        display: block;
-        width: 150px;
+        display: none;
     }
 
     .texto .p3{
@@ -449,7 +533,6 @@ nav ul li a:hover{
 
     .tit2{
         font-size: 15px;
-        font-weight: bold;
     }
 }
 
@@ -554,8 +637,7 @@ nav ul li a:hover{
     }
 
     .imgNone{
-        display: block;
-        width: 150px;
+        display: none;
     }
 
     .footer {
@@ -601,6 +683,13 @@ nav ul li a:hover{
 
     .texto .p3{
         font-size: 12px;
+    }
+
+    .conteinerImg2 {
+        display: block;
+        width: 326px;
+        text-align: center;
+        padding: 44px 0;
     }
 
 }
