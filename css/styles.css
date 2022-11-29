@@ -102,9 +102,10 @@ nav ul li a:hover{
 
 nav ul li ul{
     position: absolute;
-    width: 200px;
+    width: 159px;
     background-color: whitesmoke;
     display: none;
+    margin-left: -19px;
 }
 
 nav ul li ul i{
@@ -327,7 +328,7 @@ nav ul li ul li a{
 }
 
 .tit2{
-    color: #F23041;
+    color: whitesmoke;
     width: 96%;
     text-shadow: black 0.2em 0.2em 0.2em
 }
@@ -383,11 +384,19 @@ nav ul li ul li a{
         display: inline-block;
         padding: 10px 14px;
     }
+
+    nav ul li ul{
+        position: absolute;
+        width: 159px;
+        background-color: whitesmoke;
+        display: none;
+        margin-left: -19px;
+    }
 }
 
 @media screen and (max-width: 1445px){
     body{
-        font-size: 10px;
+        font-size: 12px;
         overflow-y:scroll;
         background-size: cover; 
     }
@@ -406,6 +415,14 @@ nav ul li ul li a{
     .hero{
         height: 20%;
         width: 100%;
+    }
+
+    nav ul li ul{
+        position: absolute;
+        width: 163px;
+        background-color: whitesmoke;
+        display: none;
+        margin-left: -28px;
     }
 }
 
@@ -672,6 +689,15 @@ nav ul li ul li a{
     .texto .p4{
         border-bottom: 2px solid #F23041;
     }
+
+    .texto .p1 {
+        font-size: 12px;
+        
+    }
+
+    .texto .p2 {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -687,7 +713,7 @@ nav ul li ul li a{
 
     .conteinerImg2 {
         display: block;
-        width: 326px;
+        width: 398px;
         text-align: center;
         padding: 44px 0;
     }
@@ -697,8 +723,15 @@ nav ul li ul li a{
 @media screen and (max-width: 400px){
 
     .texto{
-        padding: 10px;
+        padding: 8px;
 
+    }
+
+    .conteinerImg2 {
+        display: block;
+        width: 300px;
+        text-align: center;
+        padding: 44px 0;
     }
 
     .texto .p3{
