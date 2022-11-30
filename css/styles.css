@@ -813,6 +813,18 @@ nav ul li ul li a{
     .fsc{
         margin: 30px 0px;
     }
+
+    .imgFinal{
+        width: 130px;
+    }
+
+    .imgFsc{
+        width: 130px;
+    }
+
+    .testo{
+        margin-top: 21px;
+    }
 }
 
 @media screen and (max-width: 500px){
