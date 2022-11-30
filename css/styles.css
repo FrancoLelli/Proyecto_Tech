@@ -34,6 +34,40 @@ body{
     display: none;
 }
 
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.final{
+    text-align: center;
+    color: whitesmoke;
+    transition: 1s linear;
+}
+
+.final:hover{
+    color: grey;
+    transition: 1s linear;
+}
+
+.testo{
+    margin-top: 5px;
+}
+
+.fsc{
+    text-align: center;
+    color: whitesmoke;
+    transition: 1s linear;
+}
+
+.fsc:hover{
+    color: grey;
+    transition: 1s linear;
+}
+
 .logo{
     position: fixed;
     left: 4;
@@ -762,6 +796,22 @@ nav ul li ul li a{
     .textos {
         font-size: 15px;
         color: whitesmoke;
+    }
+
+    .imagenes{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .final{
+        margin: 30px 0px;
+    }
+
+    .fsc{
+        margin: 30px 0px;
     }
 }
 
