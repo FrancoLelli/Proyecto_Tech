@@ -43,14 +43,40 @@ body{
     padding: 20px 0px;
 }
 
+.imagenes2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+
+.imgApa{
+    width: 200px;
+}
+
 .final{
     text-align: center;
     color: whitesmoke;
     transition: 1s linear;
 }
 
+.final2{
+    text-align: center;
+    padding: 50px 50px;
+    color: whitesmoke;
+    transition: 1s linear;
+}
+
+.final2:hover{
+    color: rgb(80, 77, 77);
+    transition: 1s linear;
+}
+
 .final:hover{
-    color: grey;
+    color: rgb(79, 76, 76);
     transition: 1s linear;
 }
 
@@ -291,7 +317,22 @@ nav ul li ul li a{
     padding: 40px;
 } 
 
+.texto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* border-top: 3px solid #F23041;
+    border-bottom: 3px solid #F23041; */
+    padding: 40px;
+} 
+
 .e{
+    padding: 80px;
+}
+
+.e2{
     padding: 80px;
 }
 
@@ -311,6 +352,15 @@ nav ul li ul li a{
 }
 
 .texto .p4{
+    font-size: 30px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #F23041;
+    font-weight:lighter;
+    padding-bottom: 5px;
+}
+
+.texto2 .p4{
     font-size: 30px;
     color: whitesmoke;
     letter-spacing: 2px;
@@ -350,6 +400,18 @@ nav ul li ul li a{
 } */
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: black;
+    padding: 10px 0;
+}
+
+.footerA {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,6 +522,23 @@ nav ul li ul li a{
 
     .imagenes{
         width: 70%;
+    }
+
+    .imagenes2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .footerA{
+        bottom: auto;
+    }
+
+    .imgApa{
+        width: 300px;
     }
     
 }
@@ -822,6 +901,10 @@ nav ul li ul li a{
     .testo{
         margin-top: 21px;
     }
+
+    .imgApa{
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -842,6 +925,9 @@ nav ul li ul li a{
         padding: 44px 0;
     }
 
+    .e2{
+        padding: 17px;
+    }
 }
 
 @media screen and (max-width: 400px){
