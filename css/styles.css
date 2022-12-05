@@ -55,6 +55,12 @@ body{
 
 .imgApa{
     width: 200px;
+    transition: 1s linear;
+}
+
+.imgApa:hover{
+    transform: scale(1.1);
+    transition: 1s linear;
 }
 
 .final{
@@ -71,7 +77,7 @@ body{
 }
 
 .final2:hover{
-    color: rgb(80, 77, 77);
+    transform: scale(1.1);
     transition: 1s linear;
 }
 
@@ -244,6 +250,12 @@ nav ul li ul li a{
 .textos{
     font-size: 20px;
     color: whitesmoke;
+}
+
+.textos1{
+    font-size: 20px;
+    color: whitesmoke;
+    width: 95%;
 }
 
 .main{
@@ -539,6 +551,12 @@ nav ul li ul li a{
 
     .imgApa{
         width: 300px;
+        transition: 1s linear;
+    }
+
+    .imgApa:hover{
+        transform: scale(1.1);
+        transition: 1s linear;
     }
     
 }
@@ -589,6 +607,19 @@ nav ul li ul li a{
     .footer3{
         bottom: auto;
     }
+
+    .texto .p1 {
+        font-size: 20px;
+    }
+
+    .texto .p2 {
+        font-size: 20px;
+    }
+
+    .img {
+        width: 100%;
+    }
+    
     
 }
 
@@ -892,6 +923,14 @@ nav ul li ul li a{
 
     .imgFinal{
         width: 110px;
+        transition: 1s linear;
+        
+    }
+
+    .imgFinal:hover{
+        width: 110px;
+        transform: scale(1.1);
+        transition: 1s linear;
     }
 
     .imgFsc{
@@ -927,6 +966,12 @@ nav ul li ul li a{
 
     .e2{
         padding: 17px;
+    }
+
+    .textos1{
+        font-size: 15px;
+        color: whitesmoke;
+        width: 95%;
     }
 }
 
